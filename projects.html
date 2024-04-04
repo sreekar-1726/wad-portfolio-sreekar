@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style for circular image */
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        /* Style for circular project boxes */
+        .project-box {
+            width: 750px;
+            height: 500px;
+            background-color: #968f8f;
+            border-radius: 50%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgb(247, 242, 242);
+            margin-bottom: 40px; /* Increased margin for more space */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 40px; /* Added more margin for space between boxes */
+        }
+
+        /* Style for project images inside circular boxes */
+        .project-box img {
+            width: 80%;
+            margin-bottom: 20px; /* Increased margin for space below image */
+            border-radius: 50%;
+        }
+
+        /* Style for project descriptions */
+        .project-box h2,
+        .project-box p {
+            margin: 10px 0; /* Adjusted margin for spacing */
+        }
+
+        /* Style for footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333; /* Added background color */
+            color: #fff; /* Added text color */
+            padding: 10px 0; /* Added padding for spacing */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; align-items: center;">
+            <!-- Profile image -->
+            <img src="sreekar.jpg" alt="Profile Image" class="profile-image">
+            <!-- Name -->
+            <h1 style="text-align: center;"><strong>MANNEM SREEKAR</strong></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="about.html"><b>ABOUT</b></a></li>
+                <li><a href="resume.html"><b>RESUME</b></a></li>
+                <li><a href="projects.html"><b>PROJECTS</b></a></li>
+                <li><a href="contact.html"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+    </header><br><br><br>
+
+    <section id="home" class="fade-in" style="margin-left: 0px;margin-right: 0px;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between;">
+
+            <div class="project-box">
+                <h2>CHESS WEBSITE</h2>
+                <img src="http://wallpapercave.com/wp/baUGRjh.jpg" alt="Project 1">
+                <p>Created an frontend interface for chess website</p>
+            </div>
+    
+            <div class="project-box">
+                <h2>ZOMATO CLONE</h2>
+                <img src="https://logodownload.org/wp-content/uploads/2020/02/zomato-logo-1.png" alt="Project 2">
+                <p>Created frontend zomato clone application</p>
+            </div>
+    
+            <div class="project-box">
+                <h2>RINEX WEBSITE</h2>
+                <img src="https://www.99corporates.com/CompanyLogo/U74999KA2021PTC143276.jpg" alt="Project 3">
+                <p>Created an interface for rinex website</p>
+            </div>
+    
+            <div class="project-box">
+                <h2>DALL.E 2</h2>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.pB8YQVqYGolHyiIRO7NJcgHaEK&pid=Api&P=0&h=180" alt="Project 4">
+                <p>Created an interface Dall.E 2 chat gpt website</p>
+            </div>
+    
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+
+</html>

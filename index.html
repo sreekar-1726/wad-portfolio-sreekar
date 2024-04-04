@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://wallpapercave.com/wp/wp2686930.png); /* Changed background image */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            font-size: larger; /* Increased font size */
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(-100px);
+            animation: slideIn 2s ease forwards;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: right; /* Align navigation items to the right */
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            transform: scale(1.1);
+        }
+
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-info {
+            display: flex;
+            align-items: center;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            text-align: center; /* Align footer content to the center */
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-info">
+            <img src="sreekar.jpg" alt="Profile Image" class="profile-image">
+            <h1><strong>MANNEM SREEKAR</strong></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="about.html"><b>ABOUT</b></a></li>
+                <li><a href="resume.html"><b>RESUME</b></a></li>
+                <li><a href="projects.html"><b>PROJECTS</b></a></li>
+                <li><a href="contact.html"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
+    </header><br><br><br>
+
+    <section id="home" class="fade-in" style="margin-left: 0px;margin-right: 0px;">
+        <table style="margin: 0 auto; text-align: center;">
+            <tr >
+                <td style="padding-left: 50px;color: white;"><b><p>
+                    As a future professional deeply engrossed in the dynamic realms of machine learning (ML) and artificial intelligence (AI), my passion knows no bounds when it comes to unraveling the mysteries of these transformative technologies. Fuelled by an insatiable thirst for knowledge and a relentless pursuit of excellence, I am continually driven to explore innovative approaches to address the most intricate challenges of our time.
+                </p>
+                <p>
+                    My journey in the captivating world of AI and ML has been characterized by a profound commitment to lifelong learning and a tireless quest for cutting-edge advancements. With each new discovery and every breakthrough, I am inspired to delve deeper, pushing the boundaries of what is possible and envisioning bold new horizons for the future of AI-driven innovation.
+                </p>
+                <p>
+                    Armed with a robust foundation in Python programming, I am poised to embark on a journey of innovation and discovery, leveraging this versatile tool to craft solutions that transcend the ordinary and redefine the possibilities of AI-driven technologies. My approach is grounded in a blend of analytical thinking and creative problem-solving, enabling me to navigate the complexities of the digital landscape with finesse and ingenuity.
+                </p>
+                <p>
+                    Through a combination of rigorous research, practical experience, and hands-on experimentation, I have cultivated a comprehensive understanding of the intricate workings of AI and ML. From neural networks to deep learning algorithms, I am well-versed in the intricacies of these cutting-edge technologies, equipped with the knowledge and expertise to navigate the ever-evolving landscape of AI-driven innovation.
+                </p>
+                <p>
+                    As I continue to chart my course in this dynamic field, I am guided by a singular vision: to harness the transformative power of AI and ML to shape a future that is not only smarter and more efficient but also more equitable and inclusive. With each passing day, I am inspired by the boundless potential of these technologies to revolutionize industries, empower communities, and drive positive change on a global scale.
+                </p>
+                <p>
+                    In the pursuit of this vision, I am committed to collaborating with like-minded individuals and organizations, pooling our collective talents and resources to tackle the most pressing challenges of our time. Together, we can unlock new frontiers of possibility, harnessing the full potential of AI and ML to create a brighter, more prosperous future for generations to come.
+                </p></b></td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
